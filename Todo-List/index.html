@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Tasks - ToDo List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="todo-app-wrapper">
+    <section class="todo-app-card">
+      <header class="app-header">
+        <i class="fa-solid fa-check-circle"></i>
+        <div class="title-group">
+          <h2>My Tasks</h2>
+          <div id="date" class="date"></div>
+        </div>
+      </header>
+      <div class="input-group">
+        <input id="task-input" type="text" placeholder="What do you need to do?" autocomplete="off" />
+        <button id="add-task"><i class="fa-solid fa-plus"></i></button>
+      </div>
+      <div class="tab-group">
+        <span class="filter active" data-filter="all">All</span>
+        <span class="filter" data-filter="active">Active</span>
+        <span class="filter" data-filter="completed">Completed</span>
+      </div>
+      <ul id="todos-list"></ul>
+      <div class="empty-state">
+        <i class="fa-solid fa-clipboard-list"></i>
+        <p>No tasks here yet</p>
+      </div>
+      <footer class="footer-bar">
+        <span id="items-left">0 items left</span>
+        <button id="clear-completed" class="clear-btn">Clear completed</button>
+      </footer>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

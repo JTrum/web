@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 开始页 -->
+        <div class="screen active" id="start-screen">
+            <h1>Quiz Time!</h1>
+            <p>Test your knowledge with these fun questions</p>
+            <button id="start-btn" class="main-btn">Start Quiz</button>
+        </div>
+
+        <!-- 题目页 -->
+        <div class="screen" id="quiz-screen">
+            <div class="quiz-info-top">
+                <span>Question <span id="current-question">1</span> of <span id="total-questions">5</span></span>
+                <span>Score: <span id="score">0</span></span>
+            </div>
+            <div class="question-box">
+                <h2 id="question-text">Question text</h2>
+                <div class="answers-container" id="answers-container">
+                    <!-- answer options (buttons) here -->
+                </div>
+            </div>
+            <div class="progress-bar-background">
+                <div class="progress-bar" id="progress"></div>
+            </div>
+        </div>
+
+        <!-- 结果页 -->
+        <div class="screen" id="result-screen">
+            <h2>Quiz Results</h2>
+            <div class="result-box">
+                <div class="final-score">
+                    You scored <span id="final-score">0</span> out of <span id="max-score">5</span>
+                </div>
+                <div class="result-message" id="result-message">Keep studying! You'll get better!</div>
+            </div>
+            <button id="restart-btn" class="main-btn">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

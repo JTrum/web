@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>Recipe Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1><i class="fas fa-utensils"></i> Recipe Finder</h1>
+    <p>Find delicious recipes from around the world</p>
+  </header>
+  <main>
+    <div class="search-section">
+      <input type="text" id="search-input" placeholder="Search for meals or keywords" />
+      <button id="search-btn">Search</button>
+    </div>
+    <div id="result-heading"></div>
+    <div id="error-container" class="hidden"></div>
+    <div id="meals" class="meals-container"></div>
+    <div id="meal-details" class="hidden">
+      <button id="back-btn" class="back-btn"><i class="fas fa-arrow-left"></i> Back to recipes</button>
+      <div class="meal-details-content"></div>
+    </div>
+    <p class="api-link">Data from <a href="https://www.themealdb.com/api.php">TheMealDB🧑‍🍳</a></p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
